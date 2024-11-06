@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "A task management system that allows users to create, update, and delete tasks. It also allow users to organize tasks by priority and set deadlines.",
   "main": "app.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "keywords": [
     "nodejs",
@@ -14,5 +16,13 @@
     "jsonwebtoken"
   ],
   "author": "alimi kehinde",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.0",
+    "nodemon": "^3.1.7"
+  }
 }
